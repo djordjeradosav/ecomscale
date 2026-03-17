@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-dark font-heading antialiased overflow-x-hidden;
+    /* Custom scrollbar to match sleek design */
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-dark/20 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-dark/40;
+  }
+}
+
+/* Cinematic Utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
